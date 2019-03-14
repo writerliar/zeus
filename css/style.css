@@ -46,14 +46,204 @@ img {
 }
 
 .container {
-/*	width: 1605px;*/
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	-webkit-clip-path: inset(100%);
+	        clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 
+.header {
+    position: relative;
+    min-height: 100vh;
+    background-image: url("../img/background-1.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    z-index: 1;
+}
+
 .header-wrapper {
-    min-height: 1412px;
-    background-image: url("../img/background.jpg");
+    width: 712px;
+    padding-top: 120px;
+    padding-bottom: 125px;
+/*    min-height: 100%;*/
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 142px;
+}
+
+.header-block {
+    margin-bottom: 250px;
+}
+
+.main-title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-family: "CinzelDecorativeBlack", Times New Roman, serif;
+    font-size: 60px;
+    color: #ffffff;
+    line-height: 60px;
+}
+
+.main-title::before,
+.main-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 33.9%;
+    height: 4px;
+    background-color: #cdb378;   
+}
+
+.main-title::before {
+    left: 0;
+}
+
+.main-title::after {
+    right: 0;
+}
+
+.quote-text {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    font-family: "CinzelDecorative", Times New Roman, serif;
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.quote-author {
+    font-family: "AmiriSlanted", Times New Roman, serif;
+    font-size: 24px;
+    line-height: 30px;
+    color: #cdb378;
+}
+
+.schroll {
+    position: relative;
+}
+
+.schroll-link {
+    display: block;
+    font-family: "AmiriSlanted", Times New Roman, serif;
+    font-size: 16px;
+    color: #cdb378;
+}
+
+.schroll-link:hover {
+    color: #ffffff;
+}
+
+.schroll-link:active {
+    color: #cdb378;
+}
+
+.schroll-text {
+    margin: 0;
+    padding: 0;
+}
+
+.schroll-link::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 5px;
+    background-color: inherit;
+}
+
+.about-zeus {
+    position: relative;
+    background-color: #1a1c0f;
+    z-index: 1;
+}
+
+.quality-block {
+    background-color: #232615;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    font-family: "CinzelDecorative", Times New Roman, serif;
+    font-size: 72px;
+    font-weight: 400px;
+}
+
+.about-zeus-title {
+    color: #ffffff;
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+    font-size: "Amiri", Times New Roman, serif;
+    font-size: 24px;
+    line-height: 48px;
+}
+
+.background-block-1 {
+    position: absolute;
+    width: 588px;
+    height: 634px;
+    background-image: url("../img/block-1.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    z-index: 2;
+}
+
+.button {
+    padding: 3px 30px;
+    font-family: "Amiri", Times New Roman, serif;
+    color: #ffffff;
+    font-size: 16px;
+    border: 3px solid #404429;
+    background-color: #272a18;
+    text-transform: uppercase;
+}
+
+.slogan-block {
+    position: relative;
+/*    min-height: 884px;*/
+    min-height: 100vh;
+    z-index: 1;
+    background-image: url(../img/background-2.jpg);
+    background-size: cover;
+}
+
+.title-special {
+    font-family: "CinzelDecorativeBlack", Times New Roman, serif;
+    font-size: 60px;
+    line-height: 72px;
+}
+
+.slogan-title {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 250px;
+    position: relative;
+    width: 570px;
+    color: #1a1c0f;
 }
