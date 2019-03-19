@@ -1,98 +1,119 @@
 @font-face {
     font-family: "Amiri";
-	src: url("../font/amiri/Amiri-Regular.ttf");
-	font-weight: normal;
+    src: url("../font/amiri/Amiri-Regular.ttf");
+    font-weight: normal;
 }
 
 @font-face {
-	font-family: "AmiriSlanted";
-	src: url("../font/amiri/Amiri-Slanted.ttf");
-	font-weight: normal;
+    font-family: "AmiriSlanted";
+    src: url("../font/amiri/Amiri-Slanted.ttf");
+    font-weight: normal;
 }
 
 @font-face {
-	font-family: "CinzelDecorative";
-	src: url("../font/cinzel-decorative/CinzelDecorative-Regular.otf");
-	font-weight: normal;
+    font-family: "CinzelDecorative";
+    src: url("../font/cinzel-decorative/CinzelDecorative-Regular.otf");
+    font-weight: normal;
 }
 
 @font-face {
-	font-family: "CinzelDecorativeBlack";
-	src: url("../font/cinzel-decorative/CinzelDecorative-Black.otf");
-	font-weight: normal;
+    font-family: "CinzelDecorativeBlack";
+    src: url("../font/cinzel-decorative/CinzelDecorative-Black.otf");
+    font-weight: normal;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	font-family: "Amiri", Times New Roman, serif;
-	font-size: 24px;
-	line-height: 1.2;
-	font-weight: normal;
-	color: #b4ba98;
+    margin: 0;
+    padding: 0;
+    font-family: "Amiri", Times New Roman, serif;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #b4ba98;
     background-color: #000000;
-	text-transform: none;
+    text-transform: none;
 }
 
 /**/
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
     box-sizing: border-box;
 }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	white-space: nowrap;
-	-webkit-clip-path: inset(100%);
-	        clip-path: inset(100%);
-	clip: rect(0 0 0 0);
-	overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
+
+/*HEADER*/
 
 
 .header {
-    position: relative;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-top: 120px;
+/*    padding-bottom: 125px;*/
+    padding-bottom: 50px;
+    text-align: center;
+    height: 100vh;
+
     background-image: url("../img/background-1.jpg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     z-index: 1;
+    box-sizing: border-box;
 }
 
+/*
 .header-wrapper {
-    width: 712px;
-    padding-top: 120px;
-    padding-bottom: 125px;
-/*    min-height: 100%;*/
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
+*/
 
 .logo {
+/*
     margin-bottom: 142px;
+    width: 153px;
+    height: 162px;
+    
+    box-sizing: border-box;
+*/
 }
 
 .header-block {
-    margin-bottom: 250px;
+    margin: 0 auto;
+/*    margin-bottom: 250px;*/
+    width: 712px;
 }
 
 .main-title {
@@ -104,6 +125,7 @@ input[type="radio"].visually-hidden {
     font-size: 60px;
     color: #ffffff;
     line-height: 60px;
+    box-sizing: border-box;
 }
 
 .main-title::before,
@@ -131,6 +153,7 @@ input[type="radio"].visually-hidden {
     font-family: "CinzelDecorative", Times New Roman, serif;
     color: #ffffff;
     font-size: 35px;
+    box-sizing: border-box;
 }
 
 .quote-author {
@@ -139,6 +162,7 @@ input[type="radio"].visually-hidden {
     line-height: 30px;
     color: #cdb378;
 }
+
 
 .schroll {
     position: relative;
@@ -155,6 +179,10 @@ input[type="radio"].visually-hidden {
     color: #ffffff;
 }
 
+.schroll-link:hover::before {
+    border-color: #ffffff;
+}
+
 .schroll-link:active {
     color: #cdb378;
 }
@@ -167,10 +195,20 @@ input[type="radio"].visually-hidden {
 .schroll-link::before {
     content: "";
     position: absolute;
-    width: 13px;
-    height: 5px;
-    background-color: inherit;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    border: 1px solid #cdb378;
+    border-top: none;
+    border-left: none;
+    bottom: -10px;
+    left: 50%;
+    box-sizing: border-box;
+    transform: translateX(-50%) rotate(45deg);
 }
+
+
+/*ABOUT ZEUS*/
 
 .about-zeus {
     position: relative;
@@ -180,6 +218,7 @@ input[type="radio"].visually-hidden {
 
 .quality-block {
     background-color: #232615;
+    width: 86.4%;
 }
 
 .title {
@@ -187,7 +226,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     font-family: "CinzelDecorative", Times New Roman, serif;
     font-size: 72px;
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 .about-zeus-title {
@@ -203,7 +242,7 @@ input[type="radio"].visually-hidden {
 }
 
 .background-block-1 {
-    position: absolute;
+/*    position: absolute;*/
     width: 588px;
     height: 634px;
     background-image: url("../img/block-1.jpg");
@@ -214,36 +253,108 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
-    padding: 3px 30px;
+    padding-top: 10px;
+    padding-right: 62px;
+    padding-bottom: 10px;
+    padding-left: 62px;
     font-family: "Amiri", Times New Roman, serif;
     color: #ffffff;
     font-size: 16px;
-    border: 3px solid #404429;
+    border: 2px solid #404429;
     background-color: #272a18;
     text-transform: uppercase;
+    box-sizing: border-box;
 }
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*SLOGAN BLOCK*/
 
 .slogan-block {
     position: relative;
-/*    min-height: 884px;*/
+    /*    min-height: 884px;*/
     min-height: 100vh;
     z-index: 1;
     background-image: url(../img/background-2.jpg);
     background-size: cover;
 }
 
+
 .title-special {
+    position: relative;
+    margin: 0;
+    padding: 0;
     font-family: "CinzelDecorativeBlack", Times New Roman, serif;
     font-size: 60px;
     line-height: 72px;
+    color: #1a1c0f;
 }
 
 .slogan-title {
-    margin: 0;
-    padding: 0;
     margin-left: auto;
     margin-right: 250px;
-    position: relative;
     width: 570px;
-    color: #1a1c0f;
+}
+
+/*ABOUT CRAFT*/
+
+.craft-wrapper {
+    margin-right: 125px;
+}
+
+.craft-title {
+    color: #cdb378;
+    width: 533px;
+    margin-top: 150px;
+    margin-bottom: 70px;
+}
+
+.site-text {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 48px;
+    color: #b4ba98;
+}
+
+.craft-text {
+    width: 685px;
+    margin-bottom: 70px;
+}
+
+.craft-text:first-child {
+}
+
+.background-block-2 {
+    height: 1016px;
+    width: 980px;
+    background-image: url("../img/block-2.jpg");
+}
+
+/*JOURNEY*/
+
+.journey {    
+    text-align: center;
+    background-image: url("../img/background.jpg");
+/*    min-height: 880px;*/
+    height: 1546px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.journey-title {
+    color: #cdb378;
+    margin-bottom: 40px;
+}
+
+.journey .site-text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 45px;
+}
+
+.button-special {
+    background-color: #1a190e;
 }
