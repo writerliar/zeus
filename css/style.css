@@ -247,6 +247,7 @@ input[type="radio"].visually-hidden {
 .about-zeus-text {
     margin-bottom: 130px;
     color: #cdb378;
+    width: 800px;
 }
 
 .quality-block {
@@ -308,7 +309,7 @@ input[type="radio"].visually-hidden {
 .big-bottle {
     position: absolute;
     top: 60px;
-    right: 250px;
+    right: 100px;
     z-index: 3;
 }
 
@@ -320,7 +321,7 @@ input[type="radio"].visually-hidden {
     min-height: 100vh;
     background-image: url(../img/background-2.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    /*background-size: cover;*/
     z-index: -1;
 }
 
@@ -373,7 +374,7 @@ input[type="radio"].visually-hidden {
 }
 
 .craft-text {
-    width: 685px;
+    min-width: 685px;
     margin-bottom: 70px;
 }
 
@@ -394,7 +395,7 @@ input[type="radio"].visually-hidden {
     text-align: center;
     background-image: url("../img/background.jpg");
 /*    min-height: 880px;*/
-    height: 1746px;
+    height: 1730px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
