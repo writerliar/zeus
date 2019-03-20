@@ -33,7 +33,6 @@ body {
     background-color: #000000;
     text-transform: none;
 }
-
 /**/
 
 a {
@@ -76,7 +75,7 @@ input[type="radio"].visually-hidden {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
+
     padding-top: 120px;
 /*    padding-bottom: 125px;*/
     padding-bottom: 50px;
@@ -216,9 +215,8 @@ input[type="radio"].visually-hidden {
     z-index: 1;
 }
 
-.quality-block {
-    background-color: #232615;
-    width: 86.4%;
+.joy-of-brewing {
+    padding-top: 100px;
 }
 
 .title {
@@ -231,25 +229,58 @@ input[type="radio"].visually-hidden {
 
 .about-zeus-title {
     color: #ffffff;
+    margin-bottom: 13px;
 }
 
 .text {
     margin: 0;
     padding: 0;
-    font-size: "Amiri", Times New Roman, serif;
+    font-family: "Amiri", Times New Roman, serif;
     font-size: 24px;
     line-height: 48px;
 }
 
+.about-zeus-text {
+    margin-bottom: 130px;
+    color: #cdb378;
+}
+
+.quality-block {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 93px;
+    margin-right: 72px;
+    background-color: #232615;
+    background-image: url("../img/logo-bg.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    box-shadow: 0px 0px 155px 0px rgba(31, 33, 43, 0.65);
+}
+
+.about-quality-title {
+    margin-bottom: 34px;
+    color: #cdb378;
+}
+
+.about-quality-text {
+    max-width: 932px;
+    margin-bottom: 48px;
+    color: #b4ba98;
+}
+
 .background-block-1 {
-/*    position: absolute;*/
+    position: absolute;
+    top: -35px;
+    right: 0;
     width: 588px;
     height: 634px;
     background-image: url("../img/block-1.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
-    z-index: 2;
+    z-index: 1;
 }
 
 .button {
@@ -276,9 +307,10 @@ input[type="radio"].visually-hidden {
     position: relative;
     /*    min-height: 884px;*/
     min-height: 100vh;
-    z-index: 1;
     background-image: url(../img/background-2.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
 }
 
 
@@ -293,12 +325,22 @@ input[type="radio"].visually-hidden {
 }
 
 .slogan-title {
+    position: absolute;
+    top: 50%;
+    right: 50px;
     margin-left: auto;
-    margin-right: 250px;
     width: 570px;
+    transform: translateY(-50%);
 }
 
 /*ABOUT CRAFT*/
+
+.about-craft {
+    position: relative;
+    display: flex;
+    z-index: 2;
+    background-color: #1a1c0f;
+}
 
 .craft-wrapper {
     margin-right: 125px;
@@ -324,13 +366,15 @@ input[type="radio"].visually-hidden {
     margin-bottom: 70px;
 }
 
-.craft-text:first-child {
-}
-
 .background-block-2 {
+    position: relative;
+    top: -150px;
     height: 1016px;
     width: 980px;
     background-image: url("../img/block-2.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
 }
 
 /*JOURNEY*/
@@ -339,7 +383,7 @@ input[type="radio"].visually-hidden {
     text-align: center;
     background-image: url("../img/background.jpg");
 /*    min-height: 880px;*/
-    height: 1546px;
+    height: 1746px;
     background-repeat: no-repeat;
     background-size: cover;
 }
