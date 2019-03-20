@@ -71,16 +71,16 @@ input[type="radio"].visually-hidden {
 
 
 .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
 
-    padding-top: 120px;
+    /*padding-top: 120px;*/
 /*    padding-bottom: 125px;*/
     padding-bottom: 50px;
     text-align: center;
-    height: 100vh;
+    /*height: 100vh;*/
 
     background-image: url("../img/background-1.jpg");
     background-repeat: no-repeat;
@@ -90,14 +90,17 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
 }
 
-/*
+
 .header-wrapper {
+    height: 100vh;
+    padding-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
 }
-*/
+
 
 .logo {
 /*
@@ -165,6 +168,7 @@ input[type="radio"].visually-hidden {
 
 .schroll {
     position: relative;
+    bottom: 30px;
 }
 
 .schroll-link {
@@ -393,6 +397,7 @@ input[type="radio"].visually-hidden {
     height: 1746px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top center;
 }
 
 .journey-title {
